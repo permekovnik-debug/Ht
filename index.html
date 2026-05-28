@@ -1,1 +1,135 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доберман — грация и сила</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(120deg, #4A90E2, #50E3C2, #B8E986);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        /* header */
+        .flat-page header {
+            padding: 20px 0;
+        }
+        .flat-page header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .flat-page header .links {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 20px;
+        }
+        .flat-page header .links li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .flat-page header .links li a:hover {
+            color: #B8E986;
+        }
+        .flat-page header .links li:last-child a {
+            background: #F5A623;
+            padding: 8px 20px;
+            border-radius: 30px;
+        }
+        /* content */
+        .flat-page .content .container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            min-height: calc(100vh - 120px);
+        }
+        .flat-page .content .info {
+            flex: 1;
+        }
+        .flat-page .content .info h1 {
+            font-size: 48px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .flat-page .content .info p {
+            color: white;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .flat-page .content .info button {
+            background: #6B5BFA;
+            border: none;
+            border-radius: 40px;
+            padding: 12px 35px;
+            cursor: pointer;
+        }
+        .flat-page .content .info button a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .flat-page .content .image {
+            flex: 1;
+            text-align: center;
+        }
+        .flat-page .content .image img {
+            max-width: 100%;
+            border-radius: 20px;
+        }
+        @media (max-width: 768px) {
+            .flat-page header .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .flat-page .content .container {
+                flex-direction: column-reverse;
+                gap: 30px;
+                text-align: center;
+            }
+            .flat-page .content .info h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="flat-page">
+    <header>
+        <div class="container">
+            <ul class="links">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">История породы</a></li>
+                <li><a href="#">Характер</a></li>
+                <li><a href="#">Уход и дрессировка</a></li>
+                <li><a href="#">Питомники</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <div class="container">
+            <div class="info">
+                <h1>Доберман — грация и сила</h1>
+                <p>Доберман — это порода, сочетающая в себе элегантность, преданность и мощный интеллект. Эти благородные собаки веками служат человеку: от охраны до работы в полиции. Узнайте всё об истории, воспитании и особенностях этих удивительных животных.</p>
+                <button><a href="#">Узнать больше</a></button>
+            </div>
+            <div class="image">
+                <img src="https://raw.githubusercontent.com/OreLLIek137/Ht/main/%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0.png" alt="Доберман">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
